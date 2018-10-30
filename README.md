@@ -1,3 +1,12 @@
+# Preface by He-Gong
+This is forked from rarcega/instagram-scraper
+Tqdm is a library for progress bar but it will cause bugs when I scrape hashtag.
+So I removed tqdm.
+I also fixed indent in `__scrape_query`. Many actions shouldn't be taken when the file is not what we want and shouldn't be counted into the maximum files. 
+I Save each item to id.json. Change filenames of media to id of item. Original code save the meta data after all the download tasks are done. This is dangerous in case the the application break down. 
+I recommend download 100 for each time if you need location and comments because comments and locations are achieved in a different concurrent threads pool.
+
+
 <img src="https://camo.githubusercontent.com/9ac4a1f7f5ea0f573451b5ddc06e29c8aa113a85/68747470733a2f2f692e696d6775722e636f6d2f6948326a6468562e706e67" align="right">
 
 Instagram Scraper
