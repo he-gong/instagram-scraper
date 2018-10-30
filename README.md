@@ -1,5 +1,6 @@
 # Preface by He-Gong
-This is forked from rarcega/instagram-scraper
+This is forked from rarcega/instagram-scraper. Thank rarcega a lot.
+
 Tqdm is a library for progress bar but it will cause bugs when I scrape hashtag.
 So I removed tqdm.
 I also fixed indent in `__scrape_query`. Many actions shouldn't be taken when the file is not what we want and shouldn't be counted into the maximum files. 
